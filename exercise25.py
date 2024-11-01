@@ -3,9 +3,13 @@
 
 bookName = input("Kitob nomini kiriting: ")
 list = ["Qiyomat", "G'arbiy frontda o'zgarish yo'q", "Urush va tinchlik", "Ufq"]
-
 reply = ""
+
 for x in list:
-    if bookName.capitalize() == x.capitalize():
+    if bookName.lower() != x.lower():
+        reply = "❌ Buni o'qimaganman"
+        
+    elif bookName.lower() == x.lower():
         reply = "✅ Buni o'qiganman"
+        
 print(reply)
