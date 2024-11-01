@@ -2,14 +2,20 @@
 "Buni o'qiganman" deb chiqarish."""
 
 bookName = input("Kitob nomini kiriting: ")
-list = ["Qiyomat", "G'arbiy frontda o'zgarish yo'q", "Urush va tinchlik", "Ufq"]
+list = ["Qiyomat", "G'arbiy frontda o'zgarish yo'q", "Ufq", "Urush va tinchlik"]
 reply = ""
 
+print(bookName)
+
+check = False
 for x in list:
-    if bookName.lower() != x.lower():
-        reply = "❌ Buni o'qimaganman"
+    
+    if bookName.lower() == x.lower():
         
-    elif bookName.lower() == x.lower():
-        reply = "✅ Buni o'qiganman"
+        check = True
+        break
         
-print(reply)
+if check:
+    print("✅ Siz bu kitobni o'qigansiz")
+else:
+    print("❌ Siz bu kitobni o'qimagansiz")
