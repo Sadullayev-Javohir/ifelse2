@@ -3,3 +3,4 @@ kunduzi bo'lsa "Xayrli kun" deb chiqarish."""
 
 time = int(input("Vaqt kiriting: "))
 
+
